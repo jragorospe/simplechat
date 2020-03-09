@@ -1,0 +1,15 @@
+{
+  "name": "simplechat",
+  "version": "1.0.0",
+  "description": "Simple chat app built with express, node and socket.io",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "nodemon": "^2.0.2",
+    "socket.io": "^2.0.4"
+  }
+}

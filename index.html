@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa"
+  rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href=
+  "https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script src=
+  "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+  <script defer src=
+  "https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <title>Chatroom</title>
+</head>
+<body>
+  <div class="parent">
+    <div id="chatroom_box">
+      <div id="chat_header">
+        Welcome To The Chatroom!  
+        <input id="help_button" type="button" value="?" onclick="help_message()"> 
+      </div>
+      <div id="messages"></div>
+    </div>
+    <div id="message_box">
+      <div class="control" style="min-width: 100%; margin: auto">
+        <input id="message_input" class="input is-focused" type=
+        "text" placeholder="Press enter to send a message"
+        autofocus="">
+      </div>
+    </div>
+    <div id="users_box">
+      <div id="users_header">
+        You are <span id="nick">anon</span><br>
+        Connected Users:
+      </div>
+      <div>
+        <ul id="nicks"></ul>
+      </div>
+    </div>
+  </div>
+  <script src=
+  "https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>
